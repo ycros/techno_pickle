@@ -14,7 +14,8 @@ use Mix.Config
 config :techno_pickle, TechnoPickle.Endpoint,
   http: [port: {:system, "PORT"}],
   url: [host: "dev.ycros.org", port: 4501],
-  cache_static_manifest: "priv/static/manifest.json"
+  cache_static_manifest: "priv/static/manifest.json",
+  check_origin: ["//localhost", "//127.0.0.1", "//dev.ycros.org"]
 
 # Do not print debug messages in production
 config :logger, level: :info
