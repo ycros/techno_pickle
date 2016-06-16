@@ -28,8 +28,8 @@ defmodule TechnoPickle.SessionState do
       1 => %TechnoPickle.Sequencer{
         id: 1,
         width: 16,
-        height: 1,
-        grid: TechnoPickle.Sequencer.build_grid(16, 1)
+        height: 2,
+        grid: TechnoPickle.Sequencer.build_grid(16, 2)
       },
     }
 
